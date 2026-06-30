@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NEXUS VELA — HCP Event Engagement · by Veridiqa</title>
+<meta name="description" content="Nexus Vela runs the human moment with healthcare professionals — a destination-smart event companion, live organiser dashboards, and compliant feedback. White-label per customer. A Veridiqa product.">
+<link rel="canonical" href="https://vela.veridiqa.net/">
+<meta property="og:title" content="NEXUS VELA — HCP Event Engagement · by Veridiqa">
+<meta property="og:description" content="Navigate every HCP journey, from invitation to insight. Destination-smart app, live dashboards, compliant feedback — white-label.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://vela.veridiqa.net/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0F1E3D;--navy2:#16284f;--gold:#E2A33C;--gold2:#F2C14E;--silver:#C9D1DC;--ink:#0b1830;--mut:#9fb0cf;--off:#F7F9FC}
+*{margin:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Poppins',system-ui,Arial,sans-serif;color:#eaf0fb;background:radial-gradient(1200px 700px at 75% -8%,#21366b,#0F1E3D 58%),#0F1E3D;min-height:100vh;line-height:1.6;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+nav{display:flex;align-items:center;justify-content:space-between;padding:22px 0;position:sticky;top:0;background:rgba(15,30,61,.72);backdrop-filter:blur(10px);z-index:20;border-bottom:1px solid rgba(255,255,255,.06)}
+.brand{display:flex;align-items:center;gap:11px;font-weight:700;letter-spacing:.5px}
+.brand img{height:34px;width:auto;border-radius:8px}
+.brand b{color:var(--gold2);font-weight:600}
+.nlinks{display:flex;gap:24px;align-items:center;font-size:14px;color:var(--silver)}
+.nlinks a:hover{color:#fff}
+.btn{display:inline-block;background:linear-gradient(135deg,var(--gold),var(--gold2));color:#241a06;font-weight:600;padding:12px 24px;border-radius:9px;transition:.2s;border:none;cursor:pointer}
+.btn:hover{transform:translateY(-2px);box-shadow:0 10px 26px rgba(226,163,60,.32)}
+.btn-ghost{background:transparent;border:1px solid rgba(201,209,220,.4);color:#eaf0fb}
+.btn-ghost:hover{border-color:var(--gold2);color:var(--gold2);box-shadow:none}
+.eyebrow{display:inline-block;color:var(--gold2);letter-spacing:3px;text-transform:uppercase;font-size:12px;font-weight:600;border:1px solid rgba(226,163,60,.4);border-radius:20px;padding:6px 16px;margin-bottom:22px;background:rgba(226,163,60,.08)}
+header.hero{padding:80px 0 64px;text-align:center}
+header .logo{width:130px;height:auto;border-radius:22px;box-shadow:0 18px 50px rgba(0,0,0,.45);margin-bottom:30px}
+h1{font-size:clamp(38px,7vw,68px);font-weight:700;line-height:1.05;letter-spacing:-1px}
+h1 .g{background:linear-gradient(90deg,var(--gold),var(--gold2));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.sub{font-size:clamp(17px,2.4vw,21px);color:var(--silver);max-width:680px;margin:20px auto 0}
+.lead{font-size:16px;color:var(--mut);max-width:720px;margin:18px auto 0}
+.cta{margin-top:38px;display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+section{padding:56px 0}
+.h2{font-size:clamp(26px,4vw,38px);font-weight:700;text-align:center;letter-spacing:-.5px}
+.h2 .g{color:var(--gold2)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:42px}
+.card{background:linear-gradient(180deg,rgba(255,255,255,.05),rgba(255,255,255,.02));border:1px solid rgba(255,255,255,.09);border-radius:18px;padding:30px 26px;transition:.25s}
+.card:hover{transform:translateY(-5px);border-color:rgba(226,163,60,.45);box-shadow:0 16px 40px rgba(0,0,0,.34)}
+.card .ic{font-size:30px;margin-bottom:14px}
+.card h3{font-size:19px;font-weight:600;margin-bottom:9px}
+.card p{font-size:14.5px;color:var(--mut)}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:40px}
+.step{text-align:center;padding:8px}
+.step .n{width:46px;height:46px;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 14px;font-weight:700;color:var(--gold2);border:1.5px solid rgba(226,163,60,.5);background:rgba(226,163,60,.08)}
+.step h4{font-size:15.5px;font-weight:600;margin-bottom:5px}
+.step p{font-size:13px;color:var(--mut)}
+.band{background:linear-gradient(135deg,rgba(226,163,60,.1),rgba(255,255,255,.03));border:1px solid rgba(226,163,60,.25);border-radius:22px;padding:46px 32px;text-align:center;margin:20px 0}
+.band p{color:var(--silver);max-width:640px;margin:14px auto 0}
+.suite{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:26px;font-size:14px;color:var(--mut)}
+.suite span{padding:8px 16px;border:1px solid rgba(255,255,255,.12);border-radius:30px}
+.suite b{color:var(--gold2)}
+footer{border-top:1px solid rgba(255,255,255,.08);padding:34px 0;text-align:center;color:var(--mut);font-size:13.5px;margin-top:30px}
+footer a{color:var(--silver)}footer a:hover{color:var(--gold2)}
+@media(max-width:760px){.cards,.steps{grid-template-columns:1fr}.nlinks .hide{display:none}}
+</style>
+</head>
+<body>
+<nav class="wrap">
+  <a class="brand" href="https://veridiqa.net/"><img src="vela_logo.png" alt="Nexus Vela"> VERIDIQA <b>· Nexus Vela</b></a>
+  <div class="nlinks"><a class="hide" href="#features">Features</a><a class="hide" href="#how">How it works</a><a class="btn btn-ghost" href="https://veridiqa.net/" style="padding:9px 18px">← Veridiqa</a></div>
+</nav>
+
+<header class="hero wrap">
+  <img class="logo" src="vela_logo.png" alt="Nexus Vela logo">
+  <div class="eyebrow">HCP Event Engagement</div>
+  <h1>Navigate every HCP journey,<br>from <span class="g">invitation to insight.</span></h1>
+  <p class="sub">Nexus Vela runs the human moment with healthcare professionals — the meetings, congresses and trips that build trust.</p>
+  <p class="lead">A destination-smart companion, effortless multi-activity check-in with live dashboards, and compliant feedback that separates the science from the experience. Every event ends with <b style="color:#eaf0fb">evidence, not guesswork</b> — and the whole platform is white-label per customer.</p>
+  <div class="cta">
+    <a class="btn" href="mailto:contact@veridiqa.net?subject=Nexus%20Vela%20—%20request%20access">Request access</a>
+    <a class="btn btn-ghost" href="https://veridiqa.net/#suite">Explore the suite →</a>
+  </div>
+</header>
+
+<section id="features" class="wrap">
+  <div class="h2">What <span class="g">Nexus Vela</span> delivers</div>
+  <div class="cards">
+    <div class="card"><div class="ic">🧭</div><h3>Destination-smart app</h3><p>Agenda, hotel and travel in one companion — with weather, prayer times, currency and more derived automatically from the city. Live organiser dashboards track every attendee.</p></div>
+    <div class="card"><div class="ic">✅</div><h3>Compliant feedback</h3><p>Effortless multi-activity check-in and structured feedback that separates the science from the experience — satisfaction, scientific value and NPS, captured cleanly and compliantly.</p></div>
+    <div class="card"><div class="ic">🎨</div><h3>White-label &amp; multilingual</h3><p>Installable, fully branded per customer, and multilingual (English &amp; Arabic). Your event, your identity — powered quietly by Veridiqa.</p></div>
+  </div>
+</section>
+
+<section id="how" class="wrap">
+  <div class="h2">From invitation to <span class="g">insight</span></div>
+  <div class="steps">
+    <div class="step"><div class="n">1</div><h4>Invite</h4><p>Attendees get a destination-smart companion the moment they're invited.</p></div>
+    <div class="step"><div class="n">2</div><h4>Travel</h4><p>Agenda, hotel, travel and local essentials, automatically tailored to the city.</p></div>
+    <div class="step"><div class="n">3</div><h4>Engage</h4><p>One-tap check-in across every session and activity, tracked live by organisers.</p></div>
+    <div class="step"><div class="n">4</div><h4>Insight</h4><p>Compliant feedback turns the event into evidence — science vs experience, scored.</p></div>
+  </div>
+</section>
+
+<section class="wrap">
+  <div class="band">
+    <div class="h2">Part of the <span class="g">Nexus</span> suite</div>
+    <p>Prism gives you clarity. Tempo gives you momentum. Vela gives you the human moment. Veridiqa gives you all three — verified.</p>
+    <div class="suite"><span><b>Nexus Prism</b> · decide</span><span><b>Nexus Tempo</b> · execute</span><span><b>Nexus Vela</b> · engage</span></div>
+    <div class="cta"><a class="btn" href="mailto:contact@veridiqa.net?subject=Nexus%20Vela%20—%20request%20access">Talk to us</a></div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">NEXUS VELA™ · a <a href="https://veridiqa.net/">Veridiqa</a> product · Verified Intelligence for Pharma<br>
+  <span style="opacity:.7">© 2026 Veridiqa · <a href="mailto:contact@veridiqa.net">contact@veridiqa.net</a></span></div>
+</footer>
+</body>
+</html>
