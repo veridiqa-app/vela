@@ -143,6 +143,7 @@ const PROGRAM = [
   { id: "dubai-2026", city: "Dubai", title: "Cardiometabolic Scientific Meeting", dateLabel: "5–8 February 2026" },
   { id: "sharm-2026", city: "Sharm El Sheikh", title: "Amarox Summit", dateLabel: "12–15 February 2026" },
   { id: "istanbul-2026", city: "Istanbul", title: "Pain & GIT Summit", dateLabel: "9–12 April 2026" },
+  { id: "jeddah-2026", city: "Jeddah", title: "Cycle Meeting 2 (CM-2)", dateLabel: "6–8 September 2026" },
 ];
 const NS = (e) => ({
   attend: (a) => `hp:${e}:attend:${a}`,
@@ -151,7 +152,7 @@ const NS = (e) => ({
 });
 
 /* THIS_EVENT — set per deployment; each event ships as its own Nexus link. */
-const THIS_EVENT = "dubai-2026";
+const THIS_EVENT = "jeddah-2026";
 
 const KIND = {
   transport_out: { icon: "🚌", label: "Transport — to venue" },
@@ -189,11 +190,11 @@ const BUILT_IN_EVENTS = [
     safety: ["Dubai is very safe; stay alert in crowded malls, souks & metro stations.", "Use official RTA taxis (cream with colored roof) or trusted ride apps.", "Be cautious of fake prize claims or deals that seem too good to be true."],
     emergency: [{ label: "Police", number: "999" }, { label: "Ambulance", number: "998" }, { label: "Civil Defence", number: "997" }],
     team: [
-      { n: "Dr. Moshira Hafez", city: "Jeddah", phone: "+966547685147" },
-      { n: "Dr. Ahmed Gaballah", city: "Riyadh", phone: "+966558018975" },
-      { n: "Dr. Mohamed Samir", city: "Dammam", phone: "+966548411363" },
+      { n: "Dr. Moshira Hafez", city: "Jeddah", phone: "shared on your private link" },
+      { n: "Dr. Ahmed Gaballah", city: "Riyadh", phone: "shared on your private link" },
+      { n: "Dr. Mohamed Samir", city: "Dammam", phone: "shared on your private link" },
     ],
-    travelAgent: { n: "Mr. Saeed Alawady", phone: "+966556314213" },
+    travelAgent: { n: "Mr. Saeed Alawady", phone: "shared on your private link" },
     sightseeing: ["Burj Khalifa", "Dubai Mall", "The Palm", "Dubai Aquarium"],
     dining: ["Abdulwahab Restaurant", "La Patio Restaurant", "Revolving Restaurant", "Kaleidoscope Restaurant"],
     agenda: {
@@ -243,9 +244,9 @@ const BUILT_IN_EVENTS = [
     safety: ["Generally safe; stay alert at Old Market, Naama Bay & Soho Square.", "Use hotel-arranged or reputable taxis; agree the fare before the trip.", "Shop from licensed stores; decline unsolicited offers politely."],
     emergency: [{ label: "Police", number: "122" }, { label: "Ambulance", number: "123" }, { label: "Tourist Police", number: "126" }],
     team: [
-      { n: "Dr. Abdulaziz Alzahrani", city: "", phone: "+966540773355" },
-      { n: "Dr. Bandar Alyousef", city: "", phone: "+966537226008" },
-      { n: "Dr. Hatim Alqubisi", city: "", phone: "+966592748940" },
+      { n: "Dr. Abdulaziz Alzahrani", city: "", phone: "shared on your private link" },
+      { n: "Dr. Bandar Alyousef", city: "", phone: "shared on your private link" },
+      { n: "Dr. Hatim Alqubisi", city: "", phone: "shared on your private link" },
     ],
     travelAgent: null,
     sightseeing: ["Soho Square", "Il Mercato", "Genena City", "Al-Sahaba Mosque", "Old Market", "Naama Bay Beach", "Sharks Bay", "Ras Mohammed National Park"],
@@ -286,12 +287,12 @@ const BUILT_IN_EVENTS = [
     safety: ["Primarily safe; beware pickpocketing on trams, Taksim Sq. & Istiklal St.", "Keep < $100 cash on you; use the hotel safe for valuables.", "Move away quickly from staged arguments/distractions in crowds."],
     emergency: [{ label: "Ambulance", number: "112" }, { label: "Police", number: "155" }, { label: "Tourism Police", number: "02125274503" }, { label: "Lost Children", number: "183" }],
     team: [
-      { n: "Dr. Ayman Shukr", city: "", phone: "+966542933076" },
-      { n: "Dr. Saleh Altuiher", city: "", phone: "+966542729303" },
-      { n: "Dr. Mahmoud Abdelmalek", city: "", phone: "+966549291895" },
-      { n: "Dr. Taha Hanafe", city: "", phone: "+966561849414" },
+      { n: "Dr. Ayman Shukr", city: "", phone: "shared on your private link" },
+      { n: "Dr. Saleh Altuiher", city: "", phone: "shared on your private link" },
+      { n: "Dr. Mahmoud Abdelmalek", city: "", phone: "shared on your private link" },
+      { n: "Dr. Taha Hanafe", city: "", phone: "shared on your private link" },
     ],
-    travelAgent: { n: "Mr. Mohamed Hawa", phone: "+966593208205" },
+    travelAgent: { n: "Mr. Mohamed Hawa", phone: "shared on your private link" },
     sightseeing: ["Taksim Square", "Istiklal Street", "Gezi Park", "Bosphorus"],
     dining: ["Park Fora Restaurant"],
     agenda: {
@@ -319,6 +320,28 @@ const BUILT_IN_EVENTS = [
       { n: "Dr. Sami Al-Habib", p: "+966500000205" }, { n: "Dr. Dalal Al-Yami", p: "+966500000206" },
       { n: "Dr. Nasser Al-Dawsari", p: "+966500000207" },
     ],
+  },
+  {
+    id: "jeddah-2026", city: "Jeddah", country: "Saudi Arabia", customer: "Amarox",
+    customerTag: "Inspiring a Healthier Future",
+    title: "Cycle Meeting 2 (CM-2)", dateLabel: "6–8 September 2026",
+    hero: "linear-gradient(140deg,#15294B 0%,#27406B 52%,#E8732A 150%)",
+    objectives: ["Second-cycle field alignment & scientific update.","Territory performance review & Q4 execution plan.","Open clinical discussion and team workshop."],
+    product: "Amarox Portfolio",
+    travel: { airport: "King Abdulaziz International Airport (JED), Jeddah", airportMap: "https://maps.app.goo.gl/", tz: "GMT+3 · same as KSA", flight: "Domestic · ≈ 850 km from Riyadh · ~1:35 h flight", arrival: "Domestic arrivals — your Amarox coordinator confirms transfer details on your private link." },
+    hotel: { name: "To be confirmed by the organizer", addr: "Jeddah, Saudi Arabia", dist: "—", map: "https://maps.app.goo.gl/", site: "" },
+    weather: { summary: "Hot & humid: ~38 °C by day, ~29 °C at night. Sunny, no rain.", link: "https://www.accuweather.com/en/sa/jeddah/104515/september-weather/104515", days: [{ d: "Sun 6", hi: 38, lo: 29 },{ d: "Mon 7", hi: 38, lo: 29 },{ d: "Tue 8", hi: 39, lo: 30 }], packing: ["Light breathable clothing; venues are air-conditioned.","Comfortable shoes.","Sunglasses, sunscreen, a refillable water bottle.","Keep medication & essentials in hand luggage."] },
+    prayerLink: "https://www.islamicfinder.org/world/saudi-arabia/105343/jeddah-prayer-times/",
+    qiblaLink: "https://qiblafinder.withgoogle.com/intl/en/desktop/finder",
+    safety: ["Jeddah is safe; normal precautions on the Corniche & crowded areas.","Use Careem/Uber or official taxis.","Stay hydrated in the September heat."],
+    emergency: [{ label: "Police", number: "999" },{ label: "Ambulance", number: "997" },{ label: "Civil Defence", number: "998" }],
+    team: [{ n: "Your Amarox coordinator", city: "Jeddah", phone: "shared on your private link" }],
+    travelAgent: { n: "Amarox travel desk", phone: "shared on your private link" },
+    sightseeing: ["Jeddah Corniche","Al-Balad (Historic Jeddah)","King Fahd Fountain","Red Sea Mall"],
+    dining: ["Al Baik","Byblos","Twina Seafood","Marmar"],
+    agenda: { venue: "To be confirmed by the organizer", date: "Sunday 6 September 2026", timeRange: "To be confirmed", rows: [{ t: "TBC", topic: "Full agenda will be published by the Amarox organizer", who: "" }] },
+    day: { date: "2026-09-06", label: "Sun · 6 Sep", items: [{ id: "jd-open", kind: "meeting", title: "Cycle Meeting 2 — opening session", start: "2026-09-06T09:00", end: "2026-09-06T09:30", checkin: true }] },
+    guests: [],
   },
 ];
 /* ---- SFDA content-compliance guard (client side) ----
@@ -2342,9 +2365,9 @@ function Assistant({ ev, api, slug, lang, go }) {
 return App;
 }
 const NexusApp = makeNexusApp();
-const CHOICES = [["dubai-2026","Dubai"],["sharm-2026","Sharm"],["istanbul-2026","Istanbul"]];
+const CHOICES = [["jeddah-2026","Jeddah — CM-2"],["dubai-2026","Dubai"],["sharm-2026","Sharm"],["istanbul-2026","Istanbul"]];
 function Edition(){
-  const [eventId, setEventId] = useState("dubai-2026");
+  const [eventId, setEventId] = useState("jeddah-2026");
   const chip = ([id,lb]) => React.createElement("button", { key:id, onClick:()=>setEventId(id),
     style:{ border:"1px solid "+(eventId===id?"#C9A24A":"rgba(255,255,255,.18)"), borderRadius:20, padding:"5px 12px", fontSize:12, fontWeight:800, cursor:"pointer",
       background: eventId===id?"#C9A24A":"transparent", color: eventId===id?"#0A1A33":"rgba(255,255,255,.72)" } }, lb);
